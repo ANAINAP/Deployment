@@ -38,5 +38,7 @@ jobs:
         REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
         TARGET: ${{ secrets.TARGET_DIR }}
                
+    - name : pm2 starting
+      run: pm2 start index --watch -i max  
         
 
