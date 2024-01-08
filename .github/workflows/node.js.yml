@@ -31,7 +31,7 @@ jobs:
     - name: PM2 INSTALL
       run: npm i pm2@latest -g
 
-    - name: Deploy to Server 1
+    - name: Deploy to Server 
       uses: easingthemes/ssh-deploy@main
       with:
         SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
