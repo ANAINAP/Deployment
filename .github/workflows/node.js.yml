@@ -38,7 +38,7 @@ jobs:
         REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
         TARGET: ${{ secrets.TARGET_DIR }}
                
-    - name : pm2 starting
-      run: pm2 restart index.js 
+    # - name : pm2 starting
+    #   run: pm2 restart index.js 
         
 
